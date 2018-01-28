@@ -1,0 +1,128 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+//fonts
+$font-nav: "Montserrat";
+$font-small-header: "Kaushan Script";
+// font-colors
+$font-white: #fff;
+//colors
+$white: #fff;
+* {
+    //border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.jumbotron .container-fluid {
+    position: relative;
+    z-index: 999;
+}
+
+.jumbotron {
+    // Style for "picture" 
+    height: 100vh;
+    background-color: #fce38a;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    margin: 0;
+    padding-top: 30px;
+    .jumbo-layer {
+        //Style for "eagle"
+        background: url(https://preview.ibb.co/d9bt46/layer_15.jpg) center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.1;
+    }
+    .nav {
+        padding: 0;
+    }
+    .navbar-brand {
+        // Style for "MoGo" 
+        color: $font-white;
+        font-family: $font-nav;
+        font-size: 30px;
+        font-weight: 700; // Text style for "M, G"
+        &:first-letter {
+            text-transform: uppercase;
+        }
+    }
+    .navbar-custom {
+        padding-top: 25px;
+        li {
+            margin: 0 20px;
+        }
+        a {
+            padding: 0;
+            color: $font-white;
+            font-family: $font-nav;
+            font-size: 14px;
+            text-transform: uppercase;
+            &:hover {
+                color: #fce38a;
+                background: none;
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    vertical-align: bottom;
+                    border-top: 2px solid #fce38a;
+                }
+            }
+        }
+    }
+    .text-header {
+        padding-top: 100px;
+        p {
+            // Style for "Creative T"
+            font-family: $font-small-header;
+            color: $font-white;
+            font-size: 72px;
+        }
+    }
+    h1 {
+        // Style for "Welcome to"
+        color: $font-white;
+        font-family: $font-nav;
+        font-size: 150px;
+        font-weight: 700;
+        line-height: 140px;
+        text-transform: uppercase;
+    }
+    .jumbo-retangle {
+        &:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 100px;
+            vertical-align: bottom;
+            border-top: 2px solid $font-white;
+        }
+    }
+    .learn-more {
+        background: transparent;
+        border: 3px solid $white;
+        color: $font-white;
+        font-family: $font-nav;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 5px 25px;
+        margin-top: 50px;
+        &:active {
+            background-color: #fce38a;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .text-header {
+        h1 {
+            font-size: 50px;
+            line-height: 80px;
+        }
+    }
+}

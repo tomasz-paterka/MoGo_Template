@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+* {
+  box-sizing: border-box; }
+
+.jumbotron .container-fluid {
+  position: relative;
+  z-index: 999; }
+
+.jumbotron {
+  height: 100vh;
+  background-color: #fce38a;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  margin: 0;
+  padding-top: 30px; }
+  .jumbotron .jumbo-layer {
+    background: url(https://preview.ibb.co/d9bt46/layer_15.jpg) center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1; }
+  .jumbotron .nav {
+    padding: 0; }
+  .jumbotron .navbar-brand {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 700; }
+    .jumbotron .navbar-brand:first-letter {
+      text-transform: uppercase; }
+  .jumbotron .navbar-custom {
+    padding-top: 25px; }
+    .jumbotron .navbar-custom li {
+      margin: 0 20px; }
+    .jumbotron .navbar-custom a {
+      padding: 0;
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 14px;
+      text-transform: uppercase; }
+      .jumbotron .navbar-custom a:hover {
+        color: #fce38a;
+        background: none; }
+        .jumbotron .navbar-custom a:hover:after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 100%;
+          vertical-align: bottom;
+          border-top: 2px solid #fce38a; }
+  .jumbotron .text-header {
+    padding-top: 100px; }
+    .jumbotron .text-header p {
+      font-family: "Kaushan Script";
+      color: #fff;
+      font-size: 72px; }
+  .jumbotron h1 {
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase; }
+  .jumbotron .jumbo-retangle:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100px;
+    vertical-align: bottom;
+    border-top: 2px solid #fff; }
+  .jumbotron .learn-more {
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    margin-top: 50px; }
+    .jumbotron .learn-more:active {
+      background-color: #fce38a; }
+
+@media (max-width: 768px) {
+  .text-header h1 {
+    font-size: 50px;
+    line-height: 80px; } }
+
+/*# sourceMappingURL=style.css.map */
