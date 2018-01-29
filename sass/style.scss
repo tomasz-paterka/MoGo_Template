@@ -93,6 +93,9 @@ $white: #fff;
         text-transform: uppercase;
     }
     .jumbo-retangle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:after {
             content: "";
             display: block;
@@ -125,4 +128,33 @@ $white: #fff;
             line-height: 80px;
         }
     }
+}
+
+.slider {
+    margin: 250px 50px 40px; // Style for "01 Intro"
+    color: $white;
+    font-family: $font-nav;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    .slider-parts {
+        &:before {
+            content: "";
+            display: block;
+            height: 20px;
+            width: 100%;
+            border-top: 3px solid $font-white;
+        }
+    } // Text style for "numbers"
+    p {
+        padding: 0 5px;
+        margin: 0;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+}
+.story-about-us-header {
+    text-align: center;
 }

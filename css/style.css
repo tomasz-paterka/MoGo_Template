@@ -63,13 +63,17 @@
     font-weight: 700;
     line-height: 140px;
     text-transform: uppercase; }
-  .jumbotron .jumbo-retangle:after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 100px;
-    vertical-align: bottom;
-    border-top: 2px solid #fff; }
+  .jumbotron .jumbo-retangle {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .jumbotron .jumbo-retangle:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 100px;
+      vertical-align: bottom;
+      border-top: 2px solid #fff; }
   .jumbotron .learn-more {
     background: transparent;
     border: 3px solid #fff;
@@ -87,5 +91,28 @@
   .text-header h1 {
     font-size: 50px;
     line-height: 80px; } }
+.slider {
+  margin: 250px 50px 40px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: left; }
+  .slider .slider-parts:before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    border-top: 3px solid #fff; }
+  .slider p {
+    padding: 0 5px;
+    margin: 0;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left; }
+
+.story-about-us-header {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
