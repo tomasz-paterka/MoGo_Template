@@ -2,18 +2,37 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400');
 //fonts
 $font-nav: "Montserrat";
-$font-small-header: "Kaushan Script";
+$font-section-small-header: "Kaushan Script";
+$font-section-header: "Montserrat";
+$font-text: 'Roboto';
 // font-colors
-$font-white: #fff;
+$font-nav-colors: #fff;
+$font-section-header-colors: #333333;
+$font-text-color: #999999;
 //colors
 $white: #fff;
+$retangle: #f38181;
 * {
     //border: 1px solid black;
     box-sizing: border-box;
 }
-
+//retangle
+.retangle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:after {
+		content: "";
+		display: block;
+		height: 3px;
+		width: 70px;
+		vertical-align: bottom;
+		border-top: 4px solid $retangle;
+	}
+}
 .jumbotron .container-fluid {
     position: relative;
     z-index: 999;
@@ -41,7 +60,7 @@ $white: #fff;
     }
     .navbar-brand {
         // Style for "MoGo" 
-        color: $font-white;
+        color: $font-nav-colors;
         font-family: $font-nav;
         font-size: 30px;
         font-weight: 700; // Text style for "M, G"
@@ -56,7 +75,7 @@ $white: #fff;
         }
         a {
             padding: 0;
-            color: $font-white;
+            color: $font-nav-colors;
             font-family: $font-nav;
             font-size: 14px;
             text-transform: uppercase;
@@ -78,14 +97,14 @@ $white: #fff;
         padding-top: 100px;
         p {
             // Style for "Creative T"
-            font-family: $font-small-header;
-            color: $font-white;
+            font-family: $font-section-small-header;
+            color: $font-nav-colors;
             font-size: 72px;
         }
     }
     h1 {
         // Style for "Welcome to"
-        color: $font-white;
+        color: $font-nav-colors;
         font-family: $font-nav;
         font-size: 150px;
         font-weight: 700;
@@ -102,13 +121,13 @@ $white: #fff;
             height: 3px;
             width: 100px;
             vertical-align: bottom;
-            border-top: 2px solid $font-white;
+            border-top: 2px solid $font-nav-colors;
         }
     }
     .learn-more {
         background: transparent;
-        border: 3px solid $white;
-        color: $font-white;
+        border: 3px solid #fff;
+        color: $font-nav-colors;
         font-family: $font-nav;
         font-size: 14px;
         font-weight: 700;
@@ -132,7 +151,7 @@ $white: #fff;
 
 .slider {
     margin: 250px 50px 40px; // Style for "01 Intro"
-    color: $white;
+    color: $font-nav-colors;
     font-family: $font-nav;
     font-size: 18px;
     text-transform: uppercase;
@@ -143,7 +162,7 @@ $white: #fff;
             display: block;
             height: 20px;
             width: 100%;
-            border-top: 3px solid $font-white;
+            border-top: 3px solid $font-nav-colors;
         }
     } // Text style for "numbers"
     p {
@@ -157,4 +176,67 @@ $white: #fff;
 }
 .story-about-us-header {
     text-align: center;
+	p {
+		font-family: $font-section-small-header;
+		font-size: 24px;
+		padding-top: 70px;
+	}
+	h2 {
+		font-family: $font-section-header;
+		font-size: 30px;
+		font-weight: 700;
+	}
 }
+.about-us-retangle {
+	@extend .retangle;
+	padding: 30px 0;
+}
+
+.story-about-us-content {
+	font-family: $font-text;
+	color: $font-text-color;
+	text-align: center;
+	font-size: 15px;
+	line-height: 24px;
+	.glyphicon {
+		color: red;
+	}
+}
+
+.story-about-us-gallery {
+	padding: 80px 0;
+	.photo-1 {
+		position: relative;
+		&:hover .about-us-layer {
+			opacity: 1;
+		}
+	}
+	.about-us-layer {
+		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 1s;
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		.glyphicon {
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 25px;
+			line-height: 30px;
+			p {
+				font-family: $font-section-header;
+				font-weight: 700;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
