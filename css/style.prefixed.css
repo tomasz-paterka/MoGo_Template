@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.retangle, .about-us-retangle {
+.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,13 +17,26 @@
           justify-content: center;
 }
 
-.retangle:after, .about-us-retangle:after {
+.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after {
   content: "";
   display: block;
   height: 3px;
   width: 70px;
   vertical-align: bottom;
   border-top: 4px solid #f38181;
+}
+
+.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  padding-top: 70px;
+}
+
+.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2 {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .jumbotron .container-fluid {
@@ -183,22 +196,6 @@
   text-align: left;
 }
 
-.story-about-us-header {
-  text-align: center;
-}
-
-.story-about-us-header p {
-  font-family: "Kaushan Script";
-  font-size: 24px;
-  padding-top: 70px;
-}
-
-.story-about-us-header h2 {
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-weight: 700;
-}
-
 .about-us-retangle {
   padding: 30px 0;
 }
@@ -221,42 +218,13 @@
   display: inline-flex;
 }
 
-.story-about-us-gallery .photo-1 {
+.story-about-us-gallery .photo {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   box-shadow: 10px 10px #95e1d3;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
-.story-about-us-gallery .photo-1:hover .about-us-layer {
-  opacity: 1;
-}
-
-.story-about-us-gallery .photo-2 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-shadow: 10px 10px #95e1d3;
-  margin: 0 20px;
-}
-
-.story-about-us-gallery .photo-2:hover .about-us-layer {
-  opacity: 1;
-}
-
-.story-about-us-gallery .photo-3 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-shadow: 10px 10px #95e1d3;
-  margin: 0 20px;
-}
-
-.story-about-us-gallery .photo-3:hover .about-us-layer {
+.story-about-us-gallery .photo:hover .about-us-layer {
   opacity: 1;
 }
 
@@ -289,5 +257,104 @@
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 18px;
+}
+
+.numbers {
+  background-color: #95e1d3;
+  height: 270px;
+}
+
+.numbers .numbers-parts {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+  padding: 0;
+}
+
+.numbers .numbers-parts .digits {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.numbers .numbers-parts p {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*@media (max-width: 768px) {
+    .numbers {
+        height: auto;
+		width: auto;
+    }
+}*/
+.services-header .services-retangle {
+  padding: 30px 0;
+}
+
+.services {
+  padding-bottom: 100px;
+}
+
+.services i {
+  color: #95e1d3;
+  font-size: 35px;
+}
+
+.services h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Montserrat";
+}
+
+.services p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+}
+
+.services .services-border {
+  margin: 30px 0;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.unique-design {
+  position: relative;
+  z-index: 999;
+  height: 80vh;
+  margin: 0;
+}
+
+.unique-design .unique-layer {
+  background: url(https://preview.ibb.co/mVeQRS/unique_design_layer.png) center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.unique-design .unique-design-header {
+  padding-top: 30px;
+}
+
+.unique-design .unique-design-header .unique-retangle {
+  padding: 30px 0;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

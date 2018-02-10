@@ -13,8 +13,9 @@ $font-nav-colors: #fff;
 $font-section-header-colors: #333333;
 $font-text-color: #999999;
 //colors
-$white: #fff;
+$main-color: #fff;
 $retangle: #f38181;
+$second-color: #95e1d3;
 * {
     //border: 1px solid black;
     box-sizing: border-box;
@@ -33,11 +34,25 @@ $retangle: #f38181;
 		border-top: 4px solid $retangle;
 	}
 }
+//section-headers
+.section-header {
+	p {
+		font-family: $font-section-small-header;
+		font-size: 24px;
+		padding-top: 70px;
+	}
+	h2 {
+		font-family: $font-section-header;
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
 .jumbotron .container-fluid {
     position: relative;
     z-index: 999;
 }
-
 .jumbotron {
     // Style for "picture" 
     height: 100vh;
@@ -94,22 +109,23 @@ $retangle: #f38181;
         }
     }
     .text-header {
-        padding-top: 100px;
-        p {
-            // Style for "Creative T"
-            font-family: $font-section-small-header;
-            color: $font-nav-colors;
-            font-size: 72px;
-        }
+    	padding-top: 100px;
+    	p {
+    		// Style for "Creative T"
+    		font-family: $font-section-small-header;
+    		color: $font-nav-colors;
+    		font-size: 72px;
+    	}
     }
+
     h1 {
-        // Style for "Welcome to"
-        color: $font-nav-colors;
-        font-family: $font-nav;
-        font-size: 150px;
-        font-weight: 700;
-        line-height: 140px;
-        text-transform: uppercase;
+    	// Style for "Welcome to"
+    	color: $font-nav-colors;
+    	font-family: $font-nav;
+    	font-size: 150px;
+    	font-weight: 700;
+    	line-height: 140px;
+    	text-transform: uppercase;
     }
     .jumbo-retangle {
         display: flex;
@@ -175,23 +191,12 @@ $retangle: #f38181;
     }
 }
 .story-about-us-header {
-    text-align: center;
-	p {
-		font-family: $font-section-small-header;
-		font-size: 24px;
-		padding-top: 70px;
-	}
-	h2 {
-		font-family: $font-section-header;
-		font-size: 30px;
-		font-weight: 700;
-	}
+	@extend .section-header;
 }
 .about-us-retangle {
 	@extend .retangle;
 	padding: 30px 0;
 }
-
 .story-about-us-content {
 	font-family: $font-text;
 	color: $font-text-color;
@@ -199,36 +204,15 @@ $retangle: #f38181;
 	font-size: 15px;
 	line-height: 24px;
 }
-
 .story-about-us-gallery {
 	padding: 80px 0;
 	.about-us-photos {
 		display: inline-flex;
-
 	}
-	.photo-1 {
+	.photo {
 		position: relative;
-		display: inline-flex;
-		box-shadow: 10px 10px #95e1d3;
-		margin: 0 20px;
-		&:hover .about-us-layer {
-			opacity: 1;
-		}
-	}
-	.photo-2 {
-		position: relative;
-		display: inline-flex;
-		box-shadow: 10px 10px #95e1d3;
-		margin: 0 20px;
-		&:hover .about-us-layer {
-			opacity: 1;
-		}
-	}
-	.photo-3 {
-		position: relative;
-		display: inline-flex;
-		box-shadow: 10px 10px #95e1d3;
-		margin: 0 20px;
+		box-shadow: 10px 10px $second-color;
+		margin: 0 15px;
 		&:hover .about-us-layer {
 			opacity: 1;
 		}
@@ -249,7 +233,7 @@ $retangle: #f38181;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			color: #fff;
+			color: $main-color;
 			text-transform: uppercase;
 			font-size: 25px;
 			line-height: 30px;
@@ -261,4 +245,89 @@ $retangle: #f38181;
 		}
 	}
 }
+.numbers {
+	background-color: $second-color;
+	height: 270px;
+	.numbers-parts {
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 270px;
+		padding: 0;
+		.digits {
+			color: $main-color;
+			font-family: $font-section-header;
+			font-size: 72px;
+			font-weight: 700;
+		}
+		p {
+			color: $main-color;
+			font-family: $font-section-header;
+			font-size: 14px;
+			text-transform: uppercase
+		}
+	}
+}
+/*@media (max-width: 768px) {
+    .numbers {
+        height: auto;
+		width: auto;
+    }
+}*/
+.services-header {
+	@extend .section-header;
+	.services-retangle {
+		@extend .retangle;
+		padding: 30px 0;
+	}
+}
+.services {
+	padding-bottom: 100px;
+	i {
+		color: $second-color;
+		font-size: 35px;
+	}
+	h4 {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $font-section-header-colors;
+		font-family: $font-section-header;
+	}
+	p {
+		font-size: 15px;
+		line-height: 24px;
+		color: $font-text-color;
+		font-family: $font-text;
+	}
+	.services-border {
+		margin: 30px 0;
+		height: 1px;
+		background-color: #e5e5e5;
+	}
+}	
 
+.unique-design {
+	position: relative;
+    z-index: 999;
+	height: 80vh;
+	margin: 0;
+    .unique-layer {
+        background: url(https://preview.ibb.co/mVeQRS/unique_design_layer.png) center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.2;
+    }
+	.unique-design-header {
+		@extend .section-header;
+		padding-top: 30px; 
+		.unique-retangle {
+			@extend .retangle;
+			padding: 30px 0;
+		}
+	}
+}
