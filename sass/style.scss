@@ -344,7 +344,7 @@ $second-color: #95e1d3;
 }
 //delete what-we-do class later
 .what-we-do {
-	padding-bottom: 20rem;
+	padding-bottom: 10rem;
 }
 .what-we-do-header {
 	@extend .section-header;
@@ -356,4 +356,54 @@ $second-color: #95e1d3;
 .what-we-do-content {
 	@extend .story-about-us-content;
 	padding-bottom: 7rem;
+}
+.comment-carousel {
+	background-color: #f8f8f8;
+	margin-bottom: 150px;
+}
+.carousel-inner {
+	padding: 50px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	i {
+		color: #95e1d3;
+		font-size: 120px;
+		background-color: #f8f8f8;
+	}
+	p {
+		color: #999999;
+		font-family: $font-text;
+		font-size: 24px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 36px;
+	}
+	.carousel-inner-retangle {
+		@extend .retangle;
+		display: inline-flex;
+		padding: 30px 0;
+	}
+	.carousel-inner-name {
+		font-size: 24px;
+		font-family: $font-section-small-header;
+		color: $font-section-header-colors;
+		display: inline-flex;
+		vertical-align: middle;
+		padding: 0 20px; 
+	}
+	[class*="col-"] {
+		padding: 0;
+	}
+}
+.carousel-control.left, .carousel-control.right {
+	background: none;
+	
+}
+.carousel-control .glyphicon-chevron-left {
+	left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right {
+	right: 0;
 }

@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle {
+.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@
           justify-content: center;
 }
 
-.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after {
+.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after {
   content: "";
   display: block;
   height: 3px;
@@ -377,7 +377,7 @@
 }
 
 .what-we-do {
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 .what-we-do-header .what-we-do-retangle {
@@ -386,5 +386,72 @@
 
 .what-we-do-content {
   padding-bottom: 7rem;
+}
+
+.comment-carousel {
+  background-color: #f8f8f8;
+  margin-bottom: 150px;
+}
+
+.carousel-inner {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-inner i {
+  color: #95e1d3;
+  font-size: 120px;
+  background-color: #f8f8f8;
+}
+
+.carousel-inner p {
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 36px;
+}
+
+.carousel-inner .carousel-inner-retangle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 30px 0;
+}
+
+.carousel-inner .carousel-inner-name {
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  color: #333333;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.carousel-inner [class*="col-"] {
+  padding: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  right: 0;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
