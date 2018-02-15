@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle {
+.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team-header .our-team-retangle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after {
+.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after, .meet-our-team-header .our-team-retangle:after {
   content: "";
   display: block;
   height: 3px;
@@ -20,13 +20,13 @@
   border-top: 4px solid #f38181;
 }
 
-.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p, .what-we-do-header p {
+.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p, .what-we-do-header p, .meet-our-team-header p {
   font-family: "Kaushan Script";
   font-size: 24px;
   padding-top: 70px;
 }
 
-.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2, .what-we-do-header h2 {
+.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2, .what-we-do-header h2, .meet-our-team-header h2 {
   font-family: "Montserrat";
   font-size: 30px;
   font-weight: 700;
@@ -188,7 +188,7 @@
   padding: 30px 0;
 }
 
-.story-about-us-content, .what-we-do-content {
+.story-about-us-content, .what-we-do-content, .meet-our-team-content {
   font-family: "Roboto";
   color: #999999;
   text-align: center;
@@ -417,6 +417,66 @@
 
 .carousel-control .glyphicon-chevron-right {
   right: 0;
+}
+
+.meet-our-team {
+  padding-bottom: 30rem;
+}
+
+.meet-our-team-header .our-team-retangle {
+  padding: 30px 0;
+}
+
+.meet-our-team-content {
+  padding-bottom: 7rem;
+}
+
+.meet-our-team-gallery .row {
+  display: inline-flex;
+}
+
+.meet-our-team-gallery .photo {
+  position: relative;
+  box-shadow: 10px 10px #95e1d3;
+  margin: 0 15px;
+}
+
+.meet-our-team-gallery .photo:hover .our-team-layer {
+  opacity: 1;
+}
+
+.meet-our-team-gallery .our-team-layer {
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+}
+
+.meet-our-team-gallery .our-team-layer .team-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+}
+
+.meet-our-team-gallery .our-team-layer .team-icons:hover {
+  background-color: #f38181;
+}
+
+.meet-our-team-gallery .our-team-layer .fab {
+  color: #f38181;
+  font-size: 30px;
+}
+
+.meet-our-team-gallery .our-team-layer .fab:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
