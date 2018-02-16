@@ -390,7 +390,7 @@
 
 .comment-carousel {
   background-color: #f8f8f8;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .carousel-inner {
@@ -467,7 +467,7 @@
   padding-bottom: 7rem;
 }
 
-.meet-our-team-gallery .row {
+.meet-our-team-gallery .meet-our-team-photos {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -493,6 +493,15 @@
   cursor: pointer;
   position: absolute;
   opacity: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .meet-our-team-gallery .our-team-layer .team-icons {

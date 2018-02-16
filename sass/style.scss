@@ -359,7 +359,7 @@ $second-color: #95e1d3;
 }
 .comment-carousel {
 	background-color: #f8f8f8;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 }
 .carousel-inner {
 	padding: 50px 0;
@@ -422,7 +422,7 @@ $second-color: #95e1d3;
 	padding-bottom: 7rem;
 }
 .meet-our-team-gallery {
-	.row {
+	.meet-our-team-photos{
 		display: inline-flex;
 	}
 	.photo {
@@ -443,6 +443,9 @@ $second-color: #95e1d3;
 		cursor: pointer;
 		position: absolute;
 		opacity: 0;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
 		.team-icons {
 			display: inline-flex;
 			justify-content: center;
