@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team-header .our-team-retangle {
+.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team .meet-our-team-header .our-team-retangle, .some-of-our-work .some-of-our-work-header .our-work-retangle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +17,7 @@
           justify-content: center;
 }
 
-.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after, .meet-our-team-header .our-team-retangle:after {
+.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after, .meet-our-team .meet-our-team-header .our-team-retangle:after, .some-of-our-work .some-of-our-work-header .our-work-retangle:after {
   content: "";
   display: block;
   height: 3px;
@@ -26,13 +26,13 @@
   border-top: 4px solid #f38181;
 }
 
-.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p, .what-we-do-header p, .meet-our-team-header p {
+.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p, .what-we-do-header p, .meet-our-team .meet-our-team-header p, .some-of-our-work .some-of-our-work-header p {
   font-family: "Kaushan Script";
   font-size: 24px;
   padding-top: 70px;
 }
 
-.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2, .what-we-do-header h2, .meet-our-team-header h2 {
+.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2, .what-we-do-header h2, .meet-our-team .meet-our-team-header h2, .some-of-our-work .some-of-our-work-header h2 {
   font-family: "Montserrat";
   font-size: 30px;
   font-weight: 700;
@@ -200,7 +200,7 @@
   padding: 30px 0;
 }
 
-.story-about-us-content, .what-we-do-content, .meet-our-team-content {
+.story-about-us-content, .what-we-do-content, .meet-our-team .meet-our-team-content, .some-of-our-work .some-of-our-work-content {
   font-family: "Roboto";
   color: #999999;
   text-align: center;
@@ -220,7 +220,6 @@
 
 .story-about-us-gallery .photo {
   position: relative;
-  box-shadow: 10px 10px #95e1d3;
   margin: 0 15px;
 }
 
@@ -238,6 +237,7 @@
   cursor: pointer;
   position: absolute;
   opacity: 0;
+  box-shadow: 10px 10px #95e1d3;
 }
 
 .story-about-us-gallery .about-us-layer .glyphicon {
@@ -456,34 +456,34 @@
 }
 
 .meet-our-team {
-  padding-bottom: 30rem;
+  padding-bottom: 10rem;
 }
 
-.meet-our-team-header .our-team-retangle {
+.meet-our-team .meet-our-team-header .our-team-retangle {
   padding: 30px 0;
 }
 
-.meet-our-team-content {
+.meet-our-team .meet-our-team-content {
   padding-bottom: 7rem;
 }
 
-.meet-our-team-gallery .meet-our-team-photos {
+.meet-our-team .meet-our-team-gallery .meet-our-team-photos {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding-bottom: 30px;
 }
 
-.meet-our-team-gallery .photo {
+.meet-our-team .meet-our-team-gallery .photo {
   position: relative;
-  box-shadow: 10px 10px #95e1d3;
   margin: 0 15px;
 }
 
-.meet-our-team-gallery .photo:hover .our-team-layer {
+.meet-our-team .meet-our-team-gallery .photo:hover .our-team-layer {
   opacity: 1;
 }
 
-.meet-our-team-gallery .our-team-layer {
+.meet-our-team .meet-our-team-gallery .our-team-layer {
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   top: 0;
   left: 0;
@@ -502,9 +502,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  box-shadow: 10px 10px #95e1d3;
 }
 
-.meet-our-team-gallery .our-team-layer .team-icons {
+.meet-our-team .meet-our-team-gallery .our-team-layer .team-icons {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -519,16 +520,62 @@
   background-color: #fce38a;
 }
 
-.meet-our-team-gallery .our-team-layer .team-icons:hover {
+.meet-our-team .meet-our-team-gallery .our-team-layer .team-icons:hover {
   background-color: #f38181;
 }
 
-.meet-our-team-gallery .our-team-layer .fab {
+.meet-our-team .meet-our-team-gallery .our-team-layer .fab {
   color: #f38181;
   font-size: 30px;
 }
 
-.meet-our-team-gallery .our-team-layer .fab:hover {
+.meet-our-team .meet-our-team-gallery .our-team-layer .fab:hover {
   color: #fff;
+}
+
+.meet-our-team .our-team-members h5 {
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.meet-our-team .our-team-members p {
+  font-family: "Roboto";
+  color: #999999;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.logos {
+  background-color: #f8f8f8;
+  margin-bottom: 10rem;
+}
+
+.logos .logos-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.logos .logos-layer img {
+  width: 100%;
+}
+
+.some-of-our-work .some-of-our-work-header .our-work-retangle {
+  padding: 30px 0;
+}
+
+.some-of-our-work .some-of-our-work-content {
+  padding-bottom: 7rem;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
