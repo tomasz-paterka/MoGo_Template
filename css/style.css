@@ -523,4 +523,79 @@
   padding-bottom: 7rem;
 }
 
+.some-of-our-work .container-fluid {
+  padding: 0;
+}
+
+.some-of-our-work .some-of-our-work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column {
+  flex: 25%;
+  max-width: 25%;
+  overflow-x: hidden;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column .our-work-photo {
+  position: relative;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column .our-work-photo:hover .our-work-column-layer {
+  opacity: 1;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column-layer {
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column-layer .our-work-column-layer-content {
+  transform: translateY(200%);
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column-layer .our-work-column-layer-content i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column-layer .our-work-column-layer-content h5 {
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column-layer .our-work-column-layer-content p {
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+@media (max-width: 800px) {
+  .our-work-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-work-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
