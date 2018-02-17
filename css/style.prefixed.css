@@ -15,7 +15,7 @@
   clear: both;
 }
 
-.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team .meet-our-team-header .our-team-retangle, .some-of-our-work .some-of-our-work-header .our-work-retangle {
+.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team .meet-our-team-header .our-team-retangle, .some-of-our-work .some-of-our-work-header .our-work-retangle, .what-people-say .what-people-say-header .what-people-say-retangle, .latest-blog .latest-blog-header .latest-blog-retangle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
           justify-content: center;
 }
 
-.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after, .meet-our-team .meet-our-team-header .our-team-retangle:after, .some-of-our-work .some-of-our-work-header .our-work-retangle:after {
+.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after, .meet-our-team .meet-our-team-header .our-team-retangle:after, .some-of-our-work .some-of-our-work-header .our-work-retangle:after, .what-people-say .what-people-say-header .what-people-say-retangle:after, .latest-blog .latest-blog-header .latest-blog-retangle:after {
   content: "";
   display: block;
   height: 3px;
@@ -36,13 +36,13 @@
   border-top: 4px solid #f38181;
 }
 
-.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p, .what-we-do-header p, .meet-our-team .meet-our-team-header p, .some-of-our-work .some-of-our-work-header p {
+.section-header p, .story-about-us-header p, .services-header p, .unique-design .unique-design-header p, .what-we-do-header p, .meet-our-team .meet-our-team-header p, .some-of-our-work .some-of-our-work-header p, .what-people-say .what-people-say-header p, .latest-blog .latest-blog-header p {
   font-family: "Kaushan Script";
   font-size: 24px;
   padding-top: 70px;
 }
 
-.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2, .what-we-do-header h2, .meet-our-team .meet-our-team-header h2, .some-of-our-work .some-of-our-work-header h2 {
+.section-header h2, .story-about-us-header h2, .services-header h2, .unique-design .unique-design-header h2, .what-we-do-header h2, .meet-our-team .meet-our-team-header h2, .some-of-our-work .some-of-our-work-header h2, .what-people-say .what-people-say-header h2, .latest-blog .latest-blog-header h2 {
   font-family: "Montserrat";
   font-size: 30px;
   font-weight: 700;
@@ -455,6 +455,7 @@
 
 .carousel-control.left, .carousel-control.right {
   background: none;
+  color: #cccccc;
 }
 
 .carousel-control .glyphicon-chevron-left {
@@ -679,5 +680,106 @@
             flex: 100%;
     max-width: 100%;
   }
+}
+
+.comment-carousel-pic {
+  padding: 50px 0;
+}
+
+.what-people-say {
+  height: 80vh;
+  position: relative;
+  z-index: 999;
+  margin: 0;
+}
+
+.what-people-say .what-people-say-layer {
+  background: url(https://preview.ibb.co/h8LcGS/what_people_say_layer.png) center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.what-people-say .what-people-say-header {
+  position: relative;
+}
+
+.what-people-say .what-people-say-header .what-people-say-retangle {
+  padding: 30px 0;
+}
+
+.what-people-say .people {
+  padding-top: 100px;
+}
+
+.what-people-say .people .people-say {
+  padding-bottom: 100px;
+}
+
+.what-people-say .people h5 {
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.what-people-say .people h6 {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: italic;
+  color: #333333;
+  line-height: 24px;
+}
+
+.what-people-say .people p {
+  font-family: "Roboto";
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.what-people-say .people .people-say-retangle {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.what-people-say .people .people-say-retangle:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70px;
+  vertical-align: bottom;
+  border-top: 4px solid #f38181;
+}
+
+.latest-blog .latest-blog-header .latest-blog-retangle {
+  padding: 30px 0;
+}
+
+.latest-blog .latest-blog-gallery {
+  padding: 60px 0;
+}
+
+.latest-blog .latest-blog-gallery .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+}
+
+.latest-blog .latest-blog-gallery .row .latest-blog-photo-2 {
+  padding: 0 30px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
