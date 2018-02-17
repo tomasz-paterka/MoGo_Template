@@ -20,6 +20,17 @@ $second-color: #95e1d3;
     //border: 1px solid black;
     box-sizing: border-box;
 }
+/*Clearfix*/
+.clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
 //retangle
 .retangle {
 	display: flex;
@@ -514,12 +525,15 @@ $second-color: #95e1d3;
 	.some-of-our-work-gallery {
 		display: flex;
 		flex-wrap: wrap;
+		padding: 0 2px;
 		.our-work-column {
 			flex: 25%;
 			max-width: 25%;
-			overflow-x: hidden;
 			.our-work-photo {
 				position: relative;
+				img {
+					width: 100%;
+				}
 				&:hover .our-work-column-layer {
 					opacity: 1;
 				}
@@ -537,7 +551,10 @@ $second-color: #95e1d3;
 			opacity: 0;
 			text-align: center;
 			.our-work-column-layer-content {
-				transform: translateY(200%);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 				i {
 					color: $main-color;
 					font-size: 25px;

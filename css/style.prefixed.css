@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+/*Clearfix*/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team .meet-our-team-header .our-team-retangle, .some-of-our-work .some-of-our-work-header .our-work-retangle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,6 +599,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 2px;
 }
 
 .some-of-our-work .some-of-our-work-gallery .our-work-column {
@@ -596,11 +607,14 @@
       -ms-flex: 25%;
           flex: 25%;
   max-width: 25%;
-  overflow-x: hidden;
 }
 
 .some-of-our-work .some-of-our-work-gallery .our-work-column .our-work-photo {
   position: relative;
+}
+
+.some-of-our-work .some-of-our-work-gallery .our-work-column .our-work-photo img {
+  width: 100%;
 }
 
 .some-of-our-work .some-of-our-work-gallery .our-work-column .our-work-photo:hover .our-work-column-layer {
@@ -621,8 +635,11 @@
 }
 
 .some-of-our-work .some-of-our-work-gallery .our-work-column-layer .our-work-column-layer-content {
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .some-of-our-work .some-of-our-work-gallery .our-work-column-layer .our-work-column-layer-content i {
