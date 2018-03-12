@@ -17,10 +17,12 @@ $main-color: #fff;
 $retangle: #f38181;
 $second-color: #95e1d3;
 * {
-    //border: 1px solid black;
-    box-sizing: border-box;
+	//border: 1px solid black;
+	box-sizing: border-box;
 }
+
 /*Clearfix*/
+
 .clearfix {
 	&:before,
 	&:after {
@@ -31,6 +33,7 @@ $second-color: #95e1d3;
 		clear: both;
 	}
 }
+
 //retangle
 .retangle {
 	display: flex;
@@ -45,6 +48,7 @@ $second-color: #95e1d3;
 		border-top: 4px solid $retangle;
 	}
 }
+
 //section-headers
 .section-header {
 	p {
@@ -61,153 +65,157 @@ $second-color: #95e1d3;
 }
 
 .jumbotron .container-fluid {
-    position: relative;
-    z-index: 999;
+	position: relative;
+	z-index: 999;
 }
-.jumbotron {
-    // Style for "picture" 
-    height: 100vh;
-    background-color: #fce38a;
-    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-    margin: 0;
-    padding-top: 30px;
-    .jumbo-layer {
-        //Style for "eagle"
-        background: url(https://preview.ibb.co/d9bt46/layer_15.jpg) center/cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0.1;
-    }
-    .nav {
-        padding: 0;
-    }
-    .navbar-brand {
-        // Style for "MoGo" 
-        color: $font-nav-colors;
-        font-family: $font-nav;
-        font-size: 30px;
-        font-weight: 700; // Text style for "M, G"
-        &:first-letter {
-            text-transform: uppercase;
-        }
-    }
-    .navbar-custom {
-        padding-top: 25px;
-        li {
-            margin: 0 20px;
-        }
-        a {
-            padding: 0;
-            color: $font-nav-colors;
-            font-family: $font-nav;
-            font-size: 14px;
-            text-transform: uppercase;
-            &:hover {
-                color: #fce38a;
-                background: none;
-                &:after {
-                    content: "";
-                    display: block;
-                    height: 3px;
-                    width: 100%;
-                    vertical-align: bottom;
-                    border-top: 2px solid #fce38a;
-                }
-            }
-        }
-    }
-    .text-header {
-    	padding-top: 100px;
-    	p {
-    		// Style for "Creative T"
-    		font-family: $font-section-small-header;
-    		color: $font-nav-colors;
-    		font-size: 72px;
-    	}
-    }
 
-    h1 {
-    	// Style for "Welcome to"
-    	color: $font-nav-colors;
-    	font-family: $font-nav;
-    	font-size: 150px;
-    	font-weight: 700;
-    	line-height: 140px;
-    	text-transform: uppercase;
-    }
-    .jumbo-retangle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &:after {
-            content: "";
-            display: block;
-            height: 3px;
-            width: 100px;
-            vertical-align: bottom;
-            border-top: 2px solid $font-nav-colors;
-        }
-    }
-    .learn-more {
-        background: transparent;
-        border: 3px solid #fff;
-        color: $font-nav-colors;
-        font-family: $font-nav;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        padding: 5px 25px;
-        margin-top: 50px;
-        &:active {
-            background-color: #fce38a;
-        }
-    }
+.jumbotron {
+	// Style for "picture" 
+	min-height: 80vh;
+	background-color: #fce38a;
+	background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+	margin: 0;
+	padding-top: 30px;
+	.jumbo-layer {
+		//Style for "eagle"
+		background: url(https://preview.ibb.co/d9bt46/layer_15.jpg) center/cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0.1;
+	}
+	.nav {
+		padding: 0;
+	}
+	.navbar-brand {
+		// Style for "MoGo" 
+		color: $font-nav-colors;
+		font-family: $font-nav;
+		font-size: 30px;
+		font-weight: 700; // Text style for "M, G"
+		&:first-letter {
+			text-transform: uppercase;
+		}
+	}
+	.navbar-custom {
+		padding-top: 25px;
+		li {
+			margin: 0 20px;
+		}
+		a {
+			padding: 0;
+			color: $font-nav-colors;
+			font-family: $font-nav;
+			font-size: 14px;
+			text-transform: uppercase;
+			&:hover {
+				color: #fce38a;
+				background: none;
+				&:after {
+					content: "";
+					display: block;
+					height: 3px;
+					width: 100%;
+					vertical-align: bottom;
+					border-top: 2px solid #fce38a;
+				}
+			}
+		}
+	}
+	.text-header {
+		padding-top: 100px;
+		p {
+			// Style for "Creative T"
+			font-family: $font-section-small-header;
+			color: $font-nav-colors;
+			font-size: 72px;
+		}
+	}
+
+	h1 {
+		// Style for "Welcome to"
+		color: $font-nav-colors;
+		font-family: $font-nav;
+		font-size: 150px;
+		font-weight: 700;
+		line-height: 140px;
+		text-transform: uppercase;
+	}
+	.jumbo-retangle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:after {
+			content: "";
+			display: block;
+			height: 3px;
+			width: 100px;
+			vertical-align: bottom;
+			border-top: 2px solid $font-nav-colors;
+		}
+	}
+	.learn-more {
+		background: transparent;
+		border: 3px solid #fff;
+		color: $font-nav-colors;
+		font-family: $font-nav;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 5px 25px;
+		margin-top: 50px;
+		&:active {
+			background-color: #fce38a;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-    .text-header {
-        h1 {
-            font-size: 50px;
-            line-height: 80px;
-        }
-    }
+	.text-header {
+		h1 {
+			font-size: 50px;
+			line-height: 80px;
+		}
+	}
 }
 
 .slider {
-    margin: 250px 50px 40px; // Style for "01 Intro"
-    color: $font-nav-colors;
-    font-family: $font-nav;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: left;
-    .slider-parts {
-        &:before {
-            content: "";
-            display: block;
-            height: 20px;
-            width: 100%;
-            border-top: 3px solid $font-nav-colors;
-        }
-    } // Text style for "numbers"
-    p {
-        padding: 0 5px;
-        margin: 0;
-        display: inline-block;
-        font-size: 24px;
-        font-weight: 700;
-        text-align: left;
-    }
+	margin: 250px 50px 40px; // Style for "01 Intro"
+	color: $font-nav-colors;
+	font-family: $font-nav;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: left;
+	.slider-parts {
+		&:before {
+			content: "";
+			display: block;
+			height: 20px;
+			width: 100%;
+			border-top: 3px solid $font-nav-colors;
+		}
+	} // Text style for "numbers"
+	p {
+		padding: 0 5px;
+		margin: 0;
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: left;
+	}
 }
+
 .story-about-us-header {
 	@extend .section-header;
 }
+
 .about-us-retangle {
 	@extend .retangle;
 	padding: 30px 0;
 }
+
 .story-about-us-content {
 	font-family: $font-text;
 	color: $font-text-color;
@@ -215,14 +223,21 @@ $second-color: #95e1d3;
 	font-size: 15px;
 	line-height: 24px;
 }
+
 .story-about-us-gallery {
 	padding: 80px 0;
+	.container {
+		padding: 0;
+	}
 	.about-us-photos {
 		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 	.photo {
 		position: relative;
-		margin: 0 15px;
+		margin: 0 10px;
 		&:hover .about-us-layer {
 			opacity: 1;
 		}
@@ -256,9 +271,11 @@ $second-color: #95e1d3;
 		}
 	}
 }
+
 .numbers {
 	background-color: $second-color;
-	height: 270px;
+	height: initial;
+	max-width: 100%;
 	.numbers-parts {
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		display: flex;
@@ -280,12 +297,14 @@ $second-color: #95e1d3;
 		}
 	}
 }
+
 /*@media (max-width: 768px) {
     .numbers {
         height: auto;
 		width: auto;
     }
 }*/
+
 .services-header {
 	@extend .section-header;
 	.services-retangle {
@@ -293,6 +312,7 @@ $second-color: #95e1d3;
 		padding: 30px 0;
 	}
 }
+
 .services {
 	padding-bottom: 100px;
 	i {
@@ -317,24 +337,24 @@ $second-color: #95e1d3;
 		height: 1px;
 		background-color: #e5e5e5;
 	}
-}	
+}
 
 .unique-design {
 	position: relative;
 	margin-bottom: 50px;
-    .unique-layer {
-        background: url(https://preview.ibb.co/mVeQRS/unique_design_layer.png) center/cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0.2
-    }
+	.unique-layer {
+		background: url(https://preview.ibb.co/mVeQRS/unique_design_layer.png) center/cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0.2
+	}
 	.unique-design-header {
 		position: relative;
 		@extend .section-header;
-		padding-top: 30px; 
+		padding-top: 30px;
 		.unique-retangle {
 			@extend .retangle;
 			padding: 30px 0;
@@ -354,6 +374,7 @@ $second-color: #95e1d3;
 .what-we-do {
 	padding-bottom: 10rem;
 }
+
 .what-we-do-header {
 	@extend .section-header;
 	.what-we-do-retangle {
@@ -361,14 +382,17 @@ $second-color: #95e1d3;
 		padding: 30px 0;
 	}
 }
+
 .what-we-do-content {
 	@extend .story-about-us-content;
 	padding-bottom: 7rem;
 }
+
 .comment-carousel {
 	background-color: #f8f8f8;
 	margin-bottom: 50px;
 }
+
 .carousel-inner {
 	padding: 50px 0;
 	display: flex;
@@ -397,16 +421,19 @@ $second-color: #95e1d3;
 		color: $font-section-header-colors;
 		display: inline-flex;
 		vertical-align: middle;
-		padding: 0 20px; 
+		padding: 0 20px;
 	}
 	[class*="col-"] {
 		padding: 0;
 	}
 }
-.carousel-control.left, .carousel-control.right {
+
+.carousel-control.left,
+.carousel-control.right {
 	background: none;
 	color: #cccccc;
 }
+
 .carousel-control .glyphicon-chevron-left {
 	left: 0;
 }
@@ -414,6 +441,7 @@ $second-color: #95e1d3;
 .carousel-control .glyphicon-chevron-right {
 	right: 0;
 }
+
 .meet-our-team {
 	padding-bottom: 10rem;
 	.meet-our-team-header {
@@ -428,13 +456,20 @@ $second-color: #95e1d3;
 		padding-bottom: 7rem;
 	}
 	.meet-our-team-gallery {
+		.container {
+			padding: 0;
+		}
 		.meet-our-team-photos {
 			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
 			padding-bottom: 30px;
+			
 		}
 		.photo {
 			position: relative;
-			margin: 0 15px;
+			margin: 0 10px;
 			&:hover .our-team-layer {
 				opacity: 1;
 			}
@@ -444,7 +479,7 @@ $second-color: #95e1d3;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 85%;
 			transition: all 1s;
 			cursor: pointer;
 			position: absolute;
@@ -475,6 +510,7 @@ $second-color: #95e1d3;
 	}
 	.our-team-members {
 		h5 {
+			margin-top: 25px;
 			font-family: $font-section-header;
 			color: $font-section-header-colors;
 			font-size: 14px;
@@ -490,6 +526,7 @@ $second-color: #95e1d3;
 		}
 	}
 }
+
 .logos {
 	background-color: #f8f8f8;
 	margin-bottom: 5rem;
@@ -503,6 +540,7 @@ $second-color: #95e1d3;
 		}
 	}
 }
+
 .some-of-our-work {
 	.some-of-our-work-header {
 		@extend .section-header;
@@ -573,23 +611,25 @@ $second-color: #95e1d3;
 		}
 	}
 }
-/*@media (max-width: 800px) {
-	.our-work-column {
+
+@media (max-width: 800px) {
+	.some-of-our-work .some-of-our-work-gallery .our-work-column {
 		flex: 50%;
 		max-width: 50%;
 	}
 }
 
 @media (max-width: 600px) {
-	.our-work-column {
+	.some-of-our-work .some-of-our-work-gallery .our-work-column {
 		flex: 100%;
 		max-width: 100%;
 	}
-}*/
+}
 
 .comment-carousel-pic {
 	padding: 50px 0;
 }
+
 .what-people-say {
 	height: 80vh;
 	position: relative;
@@ -651,8 +691,9 @@ $second-color: #95e1d3;
 		}
 	}
 }
+
 .latest-blog {
-	 padding-bottom: 70px;
+	padding-bottom: 70px;
 	.latest-blog-header {
 		@extend .section-header;
 		.latest-blog-retangle {
@@ -731,6 +772,7 @@ $second-color: #95e1d3;
 		}
 	}
 }
+
 .map {
 	height: 20vh;
 	position: relative;

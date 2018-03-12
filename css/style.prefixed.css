@@ -55,7 +55,7 @@
 }
 
 .jumbotron {
-  height: 100vh;
+  min-height: 80vh;
   background-color: #fce38a;
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   margin: 0;
@@ -222,15 +222,27 @@
   padding: 80px 0;
 }
 
+.story-about-us-gallery .container {
+  padding: 0;
+}
+
 .story-about-us-gallery .about-us-photos {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .story-about-us-gallery .photo {
   position: relative;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .story-about-us-gallery .photo:hover .about-us-layer {
@@ -271,7 +283,8 @@
 
 .numbers {
   background-color: #95e1d3;
-  height: 270px;
+  height: initial;
+  max-width: 100%;
 }
 
 .numbers .numbers-parts {
@@ -449,7 +462,8 @@
   padding: 0;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left,
+.carousel-control.right {
   background: none;
   color: #cccccc;
 }
@@ -474,16 +488,28 @@
   padding-bottom: 7rem;
 }
 
+.meet-our-team .meet-our-team-gallery .container {
+  padding: 0;
+}
+
 .meet-our-team .meet-our-team-gallery .meet-our-team-photos {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 30px;
 }
 
 .meet-our-team .meet-our-team-gallery .photo {
   position: relative;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .meet-our-team .meet-our-team-gallery .photo:hover .our-team-layer {
@@ -495,7 +521,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   transition: all 1s;
   cursor: pointer;
   position: absolute;
@@ -541,6 +567,7 @@
 }
 
 .meet-our-team .our-team-members h5 {
+  margin-top: 25px;
   font-family: "Montserrat";
   color: #333333;
   font-size: 14px;
@@ -660,19 +687,24 @@
   line-height: 24px;
 }
 
-/*@media (max-width: 800px) {
-	.our-work-column {
-		flex: 50%;
-		max-width: 50%;
-	}
+@media (max-width: 800px) {
+  .some-of-our-work .some-of-our-work-gallery .our-work-column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 600px) {
-	.our-work-column {
-		flex: 100%;
-		max-width: 100%;
-	}
-}*/
+  .some-of-our-work .some-of-our-work-gallery .our-work-column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
 .comment-carousel-pic {
   padding: 50px 0;
 }
