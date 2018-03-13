@@ -281,7 +281,7 @@ $second-color: #95e1d3;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 270px;
+		min-height: 270px;
 		padding: 0;
 		.digits {
 			color: $main-color;
@@ -474,12 +474,15 @@ $second-color: #95e1d3;
 				opacity: 1;
 			}
 		}
+		.our-team-container {
+			position: relative;
+		}
 		.our-team-layer {
 			background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 85%;
+			height: 100%;
 			transition: all 1s;
 			cursor: pointer;
 			position: absolute;
@@ -631,7 +634,7 @@ $second-color: #95e1d3;
 }
 
 .what-people-say {
-	height: 80vh;
+	min-height: 80vh;
 	position: relative;
 	.what-people-say-layer {
 		background: url(https://preview.ibb.co/h8LcGS/what_people_say_layer.png) center/cover;
@@ -703,11 +706,11 @@ $second-color: #95e1d3;
 	}
 	.latest-blog-gallery {
 		padding: 25px 0;
-		.row {
-			display: flex;
-			.latest-blog-photo {
-				padding: 0 30px;
-			}
+		.container {
+			padding: 0;
+		}
+		.latest-blog-photo {
+			padding: 0;
 			.latest-blog-calendar {
 				transform: translate(-1rem, -8rem);
 				text-align: center;
@@ -729,53 +732,52 @@ $second-color: #95e1d3;
 					font-style: italic;
 				}
 			}
-		}
-	}
-	.latest-blog-text {
-		h5 {
-			font-family: $font-section-header;
-			color: $font-section-header-colors;
-			font-size: 14px;
-			font-weight: 700;
-			text-transform: uppercase;
-		}
-		p {
-			font-family: $font-text;
-			color: $font-text-color;
-			font-size: 15px;
-			line-height: 24px;
-		}
-		.latest-blog-border {
-			margin: 20px 0 0;
-			height: 1px;
-			background-color: #e5e5e5;
-			width: 100%;
-		}
-	}
-	.latest-blog-counter {
-		padding-top: 15px;
-		.latest-blog-icons {
-			display: inline-flex;
-			i {
-				color: $second-color;
-				font-size: 15px;
-				padding: 0 5px;
-				display: inline-flex;
+			.latest-blog-text {
+				h5 {
+					font-family: $font-section-header;
+					color: $font-section-header-colors;
+					font-size: 14px;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+				p {
+					font-family: $font-text;
+					color: $font-text-color;
+					font-size: 15px;
+					line-height: 24px;
+				}
+				.latest-blog-border {
+					margin: 20px 0 0;
+					height: 1px;
+					background-color: #e5e5e5;
+					width: 90%;
+				}
 			}
-			p {
-				font-family: $font-text;
-				font-size: 15px;
-				font-style: italic;
-				color: $font-text-color;
-				padding: 0 5px;
+			.latest-blog-icons {
+				margin-top: 14px;
+				display: inline-flex;
+				i {
+					color: $second-color;
+					font-size: 15px;
+					padding: 0 5px;
+					display: inline-flex;
+				}
+				p {
+					font-family: $font-text;
+					font-size: 15px;
+					font-style: italic;
+					color: $font-text-color;
+					padding: 0 5px;
+				}
 			}
 		}
 	}
 }
 
 .map {
-	height: 20vh;
+	min-height: 20vh;
 	position: relative;
+	cursor: pointer;
 	.map-layer {
 		background: url(https://preview.ibb.co/d72UFn/map.png) center/cover;
 		position: absolute;
@@ -806,5 +808,49 @@ $second-color: #95e1d3;
 			@extend .retangle;
 			padding: 20px 0;
 		}
+	}
+}
+.social-media {
+	padding: 100px;
+	background-color: #f8f8f8;
+	[class*="col-"] {
+		padding: 0;
+	}
+	.social-brand {
+		color: #cccccc;
+		font-family: $font-nav;
+		font-size: 46px;
+		font-weight: 700;
+		text-decoration: none;
+		&:first-letter {
+			text-transform: uppercase;
+		}
+	}
+	.social-text {
+		font-family: $font-text;
+		color: $font-text-color;
+		font-size: 15px;
+		line-height: 24px;
+		margin-top: 40px;
+	}
+	.followers {
+		display: inline-flex;
+		color: $font-section-header-colors;
+		font-family: $font-section-header;
+		margin-top: 20px;
+		.followers-number {
+			margin-right: 5px;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		p {
+			margin: auto;
+		}
+	}
+	.followers-border {
+		margin-top: 10px;
+		height: 1px;
+		background-color: #e5e5e5;
+		width: 100%;
 	}
 }

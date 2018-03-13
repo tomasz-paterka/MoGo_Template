@@ -298,7 +298,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 270px;
+  min-height: 270px;
   padding: 0;
 }
 
@@ -516,12 +516,16 @@
   opacity: 1;
 }
 
+.meet-our-team .meet-our-team-gallery .our-team-container {
+  position: relative;
+}
+
 .meet-our-team .meet-our-team-gallery .our-team-layer {
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: 100%;
   transition: all 1s;
   cursor: pointer;
   position: absolute;
@@ -710,7 +714,7 @@
 }
 
 .what-people-say {
-  height: 80vh;
+  min-height: 80vh;
   position: relative;
 }
 
@@ -797,17 +801,15 @@
   padding: 25px 0;
 }
 
-.latest-blog .latest-blog-gallery .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.latest-blog .latest-blog-gallery .container {
+  padding: 0;
 }
 
-.latest-blog .latest-blog-gallery .row .latest-blog-photo {
-  padding: 0 30px;
+.latest-blog .latest-blog-gallery .latest-blog-photo {
+  padding: 0;
 }
 
-.latest-blog .latest-blog-gallery .row .latest-blog-calendar {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-calendar {
   -webkit-transform: translate(-1rem, -8rem);
           transform: translate(-1rem, -8rem);
   text-align: center;
@@ -817,7 +819,7 @@
   height: 70px;
 }
 
-.latest-blog .latest-blog-gallery .row .latest-blog-calendar h3 {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-calendar h3 {
   margin: 10px 0 0;
   color: #fff;
   font-family: "Montserrat";
@@ -825,14 +827,14 @@
   font-weight: 700;
 }
 
-.latest-blog .latest-blog-gallery .row .latest-blog-calendar p {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-calendar p {
   color: #fff;
   font-size: 15px;
   font-family: "Roboto";
   font-style: italic;
 }
 
-.latest-blog .latest-blog-text h5 {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-text h5 {
   font-family: "Montserrat";
   color: #333333;
   font-size: 14px;
@@ -840,31 +842,28 @@
   text-transform: uppercase;
 }
 
-.latest-blog .latest-blog-text p {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-text p {
   font-family: "Roboto";
   color: #999999;
   font-size: 15px;
   line-height: 24px;
 }
 
-.latest-blog .latest-blog-text .latest-blog-border {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-text .latest-blog-border {
   margin: 20px 0 0;
   height: 1px;
   background-color: #e5e5e5;
-  width: 100%;
+  width: 90%;
 }
 
-.latest-blog .latest-blog-counter {
-  padding-top: 15px;
-}
-
-.latest-blog .latest-blog-counter .latest-blog-icons {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-icons {
+  margin-top: 14px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.latest-blog .latest-blog-counter .latest-blog-icons i {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-icons i {
   color: #95e1d3;
   font-size: 15px;
   padding: 0 5px;
@@ -873,7 +872,7 @@
   display: inline-flex;
 }
 
-.latest-blog .latest-blog-counter .latest-blog-icons p {
+.latest-blog .latest-blog-gallery .latest-blog-photo .latest-blog-icons p {
   font-family: "Roboto";
   font-size: 15px;
   font-style: italic;
@@ -882,8 +881,9 @@
 }
 
 .map {
-  height: 20vh;
+  min-height: 20vh;
   position: relative;
+  cursor: pointer;
 }
 
 .map .map-layer {
@@ -920,5 +920,60 @@
 
 .map .map-header .map-retangle {
   padding: 20px 0;
+}
+
+.social-media {
+  padding: 100px;
+  background-color: #f8f8f8;
+}
+
+.social-media [class*="col-"] {
+  padding: 0;
+}
+
+.social-media .social-brand {
+  color: #cccccc;
+  font-family: "Montserrat";
+  font-size: 46px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-media .social-brand:first-letter {
+  text-transform: uppercase;
+}
+
+.social-media .social-text {
+  font-family: "Roboto";
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 40px;
+}
+
+.social-media .followers {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #333333;
+  font-family: "Montserrat";
+  margin-top: 20px;
+}
+
+.social-media .followers .followers-number {
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.social-media .followers p {
+  margin: auto;
+}
+
+.social-media .followers-border {
+  margin-top: 10px;
+  height: 1px;
+  background-color: #e5e5e5;
+  width: 100%;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
