@@ -853,4 +853,68 @@ $second-color: #95e1d3;
 		background-color: #e5e5e5;
 		width: 100%;
 	}
+	.social-btns {
+		margin-top: 10px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		p {
+			margin: auto;
+			font-size: 15px;
+			font-family: $font-text;
+			line-height: 24px;
+			color: $font-text-color;
+			font-style: italic;
+		}
+		.social-btns-icons {
+			font-size: 15px;
+			color: $second-color;
+			padding: 0 10px;
+			i {
+				padding: 0 8px;
+				cursor: pointer;
+			}
+		}
+	}
+	.form-inline {
+		margin-top: 40px;
+		.form-control {
+			border-radius: 0;
+			padding: 20px 20px;
+		}
+		.btn {
+			background-color: $second-color;
+			border-radius: 0;
+			padding: 10px 15px;
+			font-family: $font-section-header;
+			font-weight: 700;
+			font-size: 14px;
+			color: $main-color;
+			text-transform: uppercase;
+		}
+	}
+	.social-media-blogs {
+		margin-left: 40px;
+		.social-blogs-header {
+			margin-bottom: 30px;
+		}
+		h5 {
+			font-family: $font-section-header;
+			color: $font-section-header-colors;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		h6 {
+			font-family: $font-section-header;
+			color: $font-section-header-colors;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 18px;
+		}
+	}
+	.social-blogs {
+		padding: 20px 0;
+	}
 }

@@ -887,4 +887,80 @@
   width: 100%;
 }
 
+.social-media .social-btns {
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media .social-btns p {
+  margin: auto;
+  font-size: 15px;
+  font-family: "Roboto";
+  line-height: 24px;
+  color: #999999;
+  font-style: italic;
+}
+
+.social-media .social-btns .social-btns-icons {
+  font-size: 15px;
+  color: #95e1d3;
+  padding: 0 10px;
+}
+
+.social-media .social-btns .social-btns-icons i {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.social-media .form-inline {
+  margin-top: 40px;
+}
+
+.social-media .form-inline .form-control {
+  border-radius: 0;
+  padding: 20px 20px;
+}
+
+.social-media .form-inline .btn {
+  background-color: #95e1d3;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.social-media .social-media-blogs {
+  margin-left: 40px;
+}
+
+.social-media .social-media-blogs .social-blogs-header {
+  margin-bottom: 30px;
+}
+
+.social-media .social-media-blogs h5 {
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.social-media .social-media-blogs h6 {
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.social-media .social-blogs {
+  padding: 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
