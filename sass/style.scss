@@ -811,10 +811,10 @@ $second-color: #95e1d3;
 	}
 }
 .social-media {
-	padding: 100px;
+	padding: 100px 0 70px;
 	background-color: #f8f8f8;
 	[class*="col-"] {
-		padding: 0;
+		//padding: 0;
 	}
 	.social-brand {
 		color: #cccccc;
@@ -893,11 +893,8 @@ $second-color: #95e1d3;
 			text-transform: uppercase;
 		}
 	}
-	.social-media-blogs {
-		margin-left: 40px;
-		.social-blogs-header {
-			margin-bottom: 30px;
-		}
+	.social-header {
+		margin-bottom: 10px;
 		h5 {
 			font-family: $font-section-header;
 			color: $font-section-header-colors;
@@ -905,6 +902,8 @@ $second-color: #95e1d3;
 			font-weight: 700;
 			text-transform: uppercase;
 		}
+	}
+	.social-media-blogs {
 		h6 {
 			font-family: $font-section-header;
 			color: $font-section-header-colors;
@@ -912,9 +911,49 @@ $second-color: #95e1d3;
 			font-weight: bold;
 			text-transform: uppercase;
 			line-height: 18px;
+			margin-top: 15px;
+			margin-bottom: 0;
+		}
+		p {
+			font-size: 13px;
+			font-family: $font-text;
+			line-height: 24px;
+			color: $font-text-color;
+			font-style: italic;
 		}
 	}
 	.social-blogs {
+		padding: 20px 0;
+	}
+	.social-instagram {
+		img {
+			margin-top: 15px;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+		a {
+			font-size: 15px;
+			font-family: $font-text;
+			line-height: 24px;
+			color: $font-section-header-colors;
+			font-style: italic;
+			text-decoration: none;
+		}
+	}
+}
+footer {
+	text-align: center;
+	background-color: #f8f8f8;
+	.footer-border {
+		height: 1px;
+		background-color: #e5e5e5;
+		width: 100%;
+	}
+	p {
+		font-size: 14px;
+		color: $font-section-header-colors;
+		font-family: $font-section-header;
+		font-weight: bold;
 		padding: 20px 0;
 	}
 }
