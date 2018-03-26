@@ -55,7 +55,7 @@
 }
 
 .jumbotron {
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: #fce38a;
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   margin: 0;
@@ -408,13 +408,17 @@
   padding-bottom: 7rem;
 }
 
-.comment-carousel {
-  background-color: #f8f8f8;
-  margin-bottom: 50px;
+.panel {
+  border: 1px solid #e5e5e5;
 }
 
-.carousel-inner {
-  padding: 50px 0;
+.panel [class*="col-"] {
+  padding: 0;
+}
+
+.panel .panel-icon {
+  color: #95e1d3;
+  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,6 +428,34 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.panel h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Montserrat";
+  padding: 14px;
+}
+
+.panel .panel-body {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+.comment-carousel {
+  background-color: #f8f8f8;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  padding: 50px 0;
 }
 
 .carousel-inner i {

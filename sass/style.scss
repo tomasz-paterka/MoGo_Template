@@ -16,6 +16,43 @@ $font-text-color: #999999;
 $main-color: #fff;
 $retangle: #f38181;
 $second-color: #95e1d3;
+
+//Media queries - mixins
+$phone: 767px;
+$tablet: 768px;
+$desktop: 992px;
+$large-desktop: 1200px;
+@mixin screen($size, $type: max, $pixels: $phone) {
+  @if $size == 'phone' {
+    @media screen and ($type + -width: $phone) {
+        @content;
+    }
+  }
+  @else if $size == 'tablet' {
+    @media screen and ($type + -width: $tablet) {
+        @content;
+    }
+  }
+  @else if $size == 'desktop' {
+    @media screen and ($type + -width: $desktop) {
+        @content;
+    }
+  }
+ @else if $size == 'large-desktop' {
+    @media screen and ($type + -width: $large-desktop) {
+        @content;
+    }
+  }
+  @else if $size == 'custom' {
+    @media screen and ($type + -width: $pixels + px) {
+     @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}
+
 * {
 	//border: 1px solid black;
 	box-sizing: border-box;
@@ -71,7 +108,7 @@ $second-color: #95e1d3;
 
 .jumbotron {
 	// Style for "picture" 
-	min-height: 80vh;
+	min-height: 100vh;
 	background-color: #fce38a;
 	background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 	margin: 0;
@@ -387,7 +424,36 @@ $second-color: #95e1d3;
 	@extend .story-about-us-content;
 	padding-bottom: 7rem;
 }
-
+.panel {
+	border: 1px solid #e5e5e5;
+	[class*="col-"] {
+		padding: 0;
+	}
+	.panel-icon {
+		color: $second-color;
+		font-size: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 15px; 
+		cursor: pointer;
+	}
+	h4 {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $font-section-header-colors;
+		font-family: $font-section-header;
+		padding: 14px;
+	}
+	.panel-body {
+		font-size: 15px;
+		line-height: 24px;
+		color: $font-text-color;
+		font-family: $font-text;
+		font-style: italic;
+	}
+}
 .comment-carousel {
 	background-color: #f8f8f8;
 	margin-bottom: 50px;
@@ -395,9 +461,6 @@ $second-color: #95e1d3;
 
 .carousel-inner {
 	padding: 50px 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	i {
 		color: #95e1d3;
 		font-size: 120px;
@@ -813,7 +876,7 @@ $second-color: #95e1d3;
 .social-media {
 	padding: 100px 0 70px;
 	background-color: #f8f8f8;
-	[class*="col-"] {
+	.container {
 		//padding: 0;
 	}
 	.social-brand {
