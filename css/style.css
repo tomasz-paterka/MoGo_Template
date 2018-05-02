@@ -15,13 +15,13 @@
   clear: both;
 }
 
-.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .carousel-inner .carousel-inner-retangle, .meet-our-team .meet-our-team-header .our-team-retangle, .some-of-our-work .some-of-our-work-header .our-work-retangle, .what-people-say .what-people-say-header .what-people-say-retangle, .latest-blog .latest-blog-header .latest-blog-retangle, .map .map-header .map-retangle {
+.retangle, .about-us-retangle, .services-header .services-retangle, .unique-design .unique-design-header .unique-retangle, .what-we-do-header .what-we-do-retangle, .meet-our-team .meet-our-team-header .our-team-retangle, .some-of-our-work .some-of-our-work-header .our-work-retangle, .what-people-say .what-people-say-header .what-people-say-retangle, .latest-blog .latest-blog-header .latest-blog-retangle, .map .map-header .map-retangle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .carousel-inner .carousel-inner-retangle:after, .meet-our-team .meet-our-team-header .our-team-retangle:after, .some-of-our-work .some-of-our-work-header .our-work-retangle:after, .what-people-say .what-people-say-header .what-people-say-retangle:after, .latest-blog .latest-blog-header .latest-blog-retangle:after, .map .map-header .map-retangle:after {
+.retangle:after, .about-us-retangle:after, .services-header .services-retangle:after, .unique-design .unique-design-header .unique-retangle:after, .what-we-do-header .what-we-do-retangle:after, .meet-our-team .meet-our-team-header .our-team-retangle:after, .some-of-our-work .some-of-our-work-header .our-work-retangle:after, .what-people-say .what-people-say-header .what-people-say-retangle:after, .latest-blog .latest-blog-header .latest-blog-retangle:after, .map .map-header .map-retangle:after {
   content: "";
   display: block;
   height: 3px;
@@ -124,10 +124,17 @@
 .jumbotron h1 {
   color: #fff;
   font-family: "Montserrat";
-  font-size: 150px;
   font-weight: 700;
-  line-height: 140px;
+  line-height: 80px;
   text-transform: uppercase;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 120px;
+    line-height: 140px;
+  }
 }
 
 .jumbotron .jumbo-retangle {
@@ -161,13 +168,14 @@
   background-color: #fce38a;
 }
 
-@media (max-width: 768px) {
-  .text-header h1 {
-    font-size: 50px;
-    line-height: 80px;
-  }
-}
-
+/*@media (max-width: 768px) {
+	.text-header {
+		h1 {
+			font-size: 50px;
+			line-height: 80px;
+		}
+	}
+}*/
 .slider {
   margin: 250px 50px 40px;
   color: #fff;
@@ -419,6 +427,22 @@
 
 .carousel-inner {
   padding: 50px 0;
+  /*.carousel-inner-retangle {
+		@extend .retangle;
+		display: inline-flex;
+		padding: 30px 0;
+	}
+	.carousel-inner-name {
+		font-size: 24px;
+		font-family: $font-section-small-header;
+		color: $font-section-header-colors;
+		display: inline-flex;
+		vertical-align: middle;
+		padding: 0 20px;
+	}
+	[class*="col-"] {
+		padding: 0;
+	}*/
 }
 
 .carousel-inner i {
@@ -433,24 +457,6 @@
   font-size: 24px;
   font-style: italic;
   line-height: 36px;
-}
-
-.carousel-inner .carousel-inner-retangle {
-  display: inline-flex;
-  padding: 30px 0;
-}
-
-.carousel-inner .carousel-inner-name {
-  font-size: 24px;
-  font-family: "Kaushan Script";
-  color: #333333;
-  display: inline-flex;
-  vertical-align: middle;
-  padding: 0 20px;
-}
-
-.carousel-inner [class*="col-"] {
-  padding: 0;
 }
 
 .carousel-control.left,
